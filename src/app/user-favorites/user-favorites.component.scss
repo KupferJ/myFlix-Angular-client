@@ -1,0 +1,44 @@
+.movie-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding: 20px;
+}
+
+.img-cont {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.mat-card {
+    max-width: 340px;
+}
+
+.remove-fav {
+    color: rgb(255, 238, 0);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.remove-fav:hover {
+    cursor: pointer;
+}
+.remove-fav:active {
+    transform: scale(1.2);
+    color: rgb(60, 60, 60);
+}
+
+.fav-dir {
+    font-size: 16px;
+    margin-bottom: 1em;
+    margin-top: 5px;
+}
+.fav-dir-txt {
+    font-weight: 450;
+}
+
+.fav-syn {
+    text-align: justify;
+}

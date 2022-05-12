@@ -1,0 +1,19 @@
+<app-nav-bar></app-nav-bar>
+<div class="movie-card" style="display: flex;">
+  <div *ngIf="displayElement; else message"></div>
+  <mat-card *ngFor="let movie of favoriteMovies;" style="flex: 1 1 auto; margin: 5px;" >
+      <mat-card-header>
+      <mat-card-title>{{movie.Title}}</mat-card-title>
+          <mat-card-subtitle> Directed by: {{movie.Director.Name}}</mat-card-subtitle>
+      </mat-card-header>
+          <div class="img-cont">
+              <img src={{movie.ImagePath}} alt= {{movie.Title}} />
+          </div>
+          <div class="fav-dir"><span class="fav-dir-txt">Genre: </span>{{ movie.Genre.Name }}</div>
+          <div class="fav-syn"> {{ movie.Description}} </div>
+          <mat-icon mat-icon-button (click)="removeFavoriteMovie(movie._id)" class="remove-fav">star</mat-icon>
+  </mat-card>
+  <ng-template #message>
+    <h2>You do not seem to have any movies in your list!</h2>
+  </ng-template>
+</div>
