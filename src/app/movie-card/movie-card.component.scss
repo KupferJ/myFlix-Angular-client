@@ -1,0 +1,53 @@
+.movie-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding: 20px;
+}
+
+.mov-card-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.mov-details {
+    border: 1px solid rgb(187, 185, 185);
+}
+.mov-details:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.img-cont {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mat-button {
+    padding: 0;
+}
+
+span.mat-button-wrapper {
+    color: black;
+}
+
+.mat-card {
+    max-width: 340px;
+}
+
+.fav-movie {
+    color: rgb(255, 238, 0);
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.fav-movie:hover {
+    cursor: pointer;
+}
+.fav-movie:active {
+    transform: scale(1.4);
+}

@@ -1,6 +1,36 @@
-<mat-card *ngFor="let movie of movies; let i=index">
-    <mat-dialog-content>
+<app-nav-bar></app-nav-bar>
+<div class="movie-card" style="display: flex;">
+    <mat-card *ngFor="let movie of movies;" style="flex: 1 1 auto; margin: 5px;" >
+        <mat-card-header>
         <mat-card-title>{{movie.Title}}</mat-card-title>
-        <mat-card-subtitle><img crossOrigin="anonymous" src={{movie.ImagePath}}></mat-card-subtitle>
-    </mat-dialog-content>
-</mat-card>
+            <mat-card-subtitle>Directed by: {{movie.Director.Name}}</mat-card-subtitle>
+        </mat-card-header>
+            <div class="img-cont">
+                <img src={{movie.ImagePath}} alt= {{movie.Title}} />
+            </div>
+        <mat-card-actions class="mov-card-actions">
+            <button class="mov-details"
+                mat-button
+                (click)="openGenreDialog(movie.Genre.Name, movie.Genre.Description)"
+            >
+                Genre
+            </button>
+            <button class="mov-details"
+                mat-button
+                (click)="openDirectorDialog(movie.Director.Name, movie.Director.Bio, movie.Director.Birth)"
+            >
+                Director
+            </button>
+            <button class="mov-details"
+                mat-button
+                (click)="openSynopsisDialog(movie.Title, movie.Description)"
+            >
+                Synopsis
+            </button>
+            <mat-icon class="fav-movie" (click)="toggleFavorite(movie)">
+                <mat-icon *ngIf="!isFavorite(movie._id)">star_border</mat-icon>
+                <mat-icon *ngIf="isFavorite(movie._id)">star</mat-icon>
+            </mat-icon>
+        </mat-card-actions>
+    </mat-card>
+</div>
