@@ -10,9 +10,9 @@ Using Angular, the frontend for a movie-application was built, which pulls data 
 ● Upon clicking on a particular movie, users are taken to a single movie view, where 
 additional movie details is displayed. The single movie view contains the following 
 additional features:   <br>
-     ○ A button that when clicked takes a user to the ​ director view​, where details about the 
+<space> ○ A button that when clicked takes a user to the ​ director view​, where details about the 
 director of that particular movie will be displayed. <br>
-     ○ A button that when clicked takes a user to the ​ genre view​, where details about that 
+<space> ○ A button that when clicked takes a user to the ​ genre view​, where details about that 
 particular genre of the movie will be displayed. <br>
 ● Users have the ability to add movies to their favorites and view, as well as edit them in a designated view. <br>
 ● Users can edit their personal information and delete their account. <br>
