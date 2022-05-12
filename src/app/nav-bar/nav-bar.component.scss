@@ -1,0 +1,40 @@
+.navbar {
+    color: white;
+    background-color: #6d6d6d;
+    padding: 10px;
+    top: 0;
+}
+.nav-items {
+    display: flex;
+    margin-left: -10px;
+}
+.nav-logout {
+    float: right;
+    margin-top: -38px;
+    color: rgb(211, 58, 41);
+    font-weight: 1200;
+    background-color: rgb(245, 175, 45);
+    border-radius: 5px;
+}
+.nav-logout:hover {
+    color: rgb(168, 0, 0);
+    background-color: rgb(255, 119, 0);
+}
+
+.nav-movies:hover {
+    transform: scale(1.1);
+}
+
+.nav-app-name {
+    font-size: 22px;
+    font-weight: 600;
+    margin-right: 2rem;
+}
+.nav-app-name:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.nav-img {
+    width: 26px;
+}

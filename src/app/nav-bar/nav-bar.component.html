@@ -1,0 +1,21 @@
+<div class="navbar">
+    <div class="nav-items">
+
+    <a class="nav-app-name" nav-button (click)="toMovies()"><img class="nav-img" src="assets/filmreel-picture.png">
+        MyFlix
+    </a>
+    <button class="nav-movies" mat-button (click)="toMovies()">Movies</button>
+    <button
+        mat-button 
+        [matMenuTriggerFor]="profile"
+    >
+        Profile<span class="material-icons">expand_more</span></button>
+    <mat-menu #profile="matMenu">
+        <button mat-menu-item (click)="toFavorites()">My Movies</button>
+        <button mat-menu-item (click)="toProfile()" >Account Details</button>
+    </mat-menu>
+    </div>
+    <div class="nav-logout">
+    <button class="logout-button" mat-button (click)="logoutFunction();">Logout</button>
+    </div>
+</div>
