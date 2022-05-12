@@ -9,6 +9,10 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 export class GenreViewComponent implements OnInit {
 
   constructor(
+    /**
+     * 
+     * @param data
+     */
     @Inject(MAT_DIALOG_DATA)
     public data: {
       name: string;

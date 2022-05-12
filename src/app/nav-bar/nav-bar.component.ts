@@ -32,6 +32,11 @@ export class NavBarComponent implements OnInit {
     this.router.navigate(['favorites']);
   }
 
+  /**
+   * function to log out of a user's profile
+   * @function logoutFunction
+   * navigates to the welcome page
+   */
   logoutFunction(): void {
     localStorage.clear();
     this.snackBar.open('You successfully logged out!', 'OK', {

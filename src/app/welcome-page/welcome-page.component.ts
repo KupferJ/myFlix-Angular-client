@@ -12,12 +12,24 @@ export class WelcomePageComponent implements OnInit {
   constructor(public dialog: MatDialog) { }
   ngOnInit(): void {
   }
+
+  /**
+   * function to open the registration dialog
+   * @function openUserRegistrationDialog
+   * @module UserRegistrationFormComponent
+   */
   openUserRegistrationDialog(): void {
     this.dialog.open(UserRegistrationFormComponent, {
       width: '280px'
     });
   }
-openUserLoginDialog(): void {
+
+  /**
+   * function to open the login dialog
+   * @function openUserLoginDialog
+   * @module UserLoginFormComponent
+   */
+  openUserLoginDialog(): void {
     this.dialog.open(UserLoginFormComponent, {
       width: '280px'
     });

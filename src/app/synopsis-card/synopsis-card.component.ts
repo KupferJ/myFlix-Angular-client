@@ -7,7 +7,10 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
   styleUrls: ['./synopsis-card.component.scss']
 })
 export class SynopsisCardComponent implements OnInit {
-
+  /**
+   * 
+   * @param data 
+   */
   constructor(
     @Inject(MAT_DIALOG_DATA)
     public data: {

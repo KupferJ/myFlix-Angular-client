@@ -31,6 +31,11 @@ export class UserProfileComponent implements OnInit {
     this.getUserProfile();
   }
 
+  /**
+   * function to get a user's data
+   * @function getUserProfile
+   * @return a list of the user's data
+   */
   getUserProfile(): void{
     const username = localStorage.getItem('user');
     if (username) {
@@ -42,6 +47,11 @@ export class UserProfileComponent implements OnInit {
     }
   }
 
+   /**
+   * function to edit a user's data
+   * @function editUser
+   * @returns an updated list of the user's data
+   */
   editUserProfile(): void {
     this.fetchApiData.editUser(this.userData).subscribe((resp) => {
       localStorage.setItem('user', JSON.stringify(resp));
@@ -54,6 +64,11 @@ export class UserProfileComponent implements OnInit {
     });
   }
 
+  /**
+   * function to delete a user's profile
+   * @function deleteUserProfile
+   * @returns delete status and navigates to welcome paghe
+   */
   deleteUserProfile(): void {
     if (confirm('This cannot be undone! Are you sure you want to delete your account?')) {
       this.fetchApiData.deleteUser().subscribe(() => {
