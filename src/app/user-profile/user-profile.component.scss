@@ -1,0 +1,50 @@
+.user-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+.profile-info {
+    font-size: 22px;
+    display: flex;
+    color: rgb(0, 0, 0);
+    border: 1px solid;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+form.user-edit-form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.mat-card-actions.usercard-actions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+.edit-btn {
+    color: white;
+    background-color: rgb(145, 145, 145);
+    border-radius: 40px;
+}
+.edit-btn:hover{
+    opacity: .8;
+}
+
+.delete-btn {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+}
+.delete-btn:hover {
+    opacity: .8;
+    background-color: red;
+}
